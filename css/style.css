@@ -1,0 +1,113 @@
+/* Body Section */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(51, 84, 84);
+}
+/* End Section */
+
+/* Calculator Section */
+.calculator {
+    background-color: rgb(211, 211, 211);
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: inset 1.5px -1.5px 5px rgb(0, 0, 0);
+/*  box-shadow: 1.5px -1.5px 1px rgb(238, 238, 238); */
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    width: 70px;
+    height: 13px;
+    margin-left: 0px;
+}
+.solar {
+    width: 80px;
+    height: 25px;
+    margin-right: 7px;
+    background-color: rgb(75, 80, 70);
+    box-shadow: inset -2px 2px 3px rgb(28, 28, 28);
+    border-radius: 4px;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    border-left: 2px solid rgb(235, 235, 235);
+    transform: translateY(-18%);    /* I need to know why this works */
+}
+.screen {
+    width: 224px;
+    height: 42px;
+    background-color: rgb(176, 205, 176);
+    font-size: 40px;
+    text-align: end;
+    padding: 4ppx;
+    box-shadow: inset -2px 2px 2px rgb(82, 88, 82);
+    border-radius: 5px;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    border-left: 2px solid rgb(235, 235, 235);
+}
+/* End Section */
+
+/* Buttons Section */
+.buttons {
+    width: 232px;
+    display: flex;
+    flex-wrap: wrap;
+}
+button {
+    background: radial-gradient(rgb(163, 162, 162), rgb(130, 130, 130));
+    border-top: 1px solid rgb(216, 216, 216);
+    border-right: 1px solid rgb(215, 215, 215);
+    border-bottom: none;
+    border-left: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    margin: 4px;
+    box-shadow: -1.5px 1.5px 2px rgb(91, 91, 91);
+    text-shadow: -1px 2px 2px rgb(156, 156, 156);
+}
+button:hover {
+    background: radial-gradient(rgb(163, 162, 162), rgb(120, 120, 120));
+}
+button:active {
+    background: radial-gradient(rgb(158, 158, 158), rgb(111, 111, 111));
+    color: rgb(235, 235, 235);
+    box-shadow: inset -1.5px 2px 2px rgb(82, 88, 82);
+    text-shadow: -1px 0 2px rgb(94, 94, 94);
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(225, 225, 225);
+    border-left: 2px solid rgb(220, 220, 220);
+}
+#equals {
+    background: radial-gradient(rgb(200, 55, 55), rgb(150, 55, 55));
+}
+#equals:hover {
+    background: radial-gradient(rgb(180, 55, 55), rgb(130, 55, 55));
+}
+#equals:active {
+    background: radial-gradient(rgb(170, 55, 55), rgb(120, 55, 55));
+}
+#clear {
+    width: 100%;
+    text-shadow: -1px 0 2px rgb(116, 111, 50);
+    background: radial-gradient(rgb(201, 204, 1), rgb(151, 161, 1));
+}
+#clear:hover {
+    background: radial-gradient(rgb(182, 185, 0), rgb(130, 139, 0));
+}
+#clear:active {
+    background: radial-gradient(rgb(171, 187, 0), rgb(122, 131, 0));
+}
+/* End Section */
